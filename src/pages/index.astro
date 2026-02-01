@@ -4,39 +4,60 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Boulder Box Vietnam | Boutique Bouldering Gym in Saigon">
   <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="section-container">
-      <h1 class="hero-title">
-        Our Gym.<br />Your Home Gym.
-      </h1>
-      <p class="hero-description">
-        Boulder Box Saigon is your home away from home with air-conditioners, filtered water, snacks, 
-        and equipped with everything you need to climb your best.
-        <br /><br />
-        From slab to vertical, cave to overhang, and dedicated training zone, we've built a space for 
-        climbers of all levels to grow, push limits, and feel right at home.
-      </p>
-      <a
-        href="https://maps.app.goo.gl/ExoLejDiePDpqMsx6"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="cta-button"
-      >
-        Take me there!
-      </a>
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          Our Gym.<br />Your Home Gym.
+        </h1>
+        <h2 class="hero-subtitle">
+          <span>We pride ourselves on being a Boutique Bouldering Gym meticulously designed to offer the <strong>coziest, airconditioned and most unique climbing experience possible</strong>.</span>
+          <br /><br />
+          <span>Our space is thoughtfully maintained, guaranteeing cleanliness, creating a welcoming atmosphere where you can relax, recharge, and connect with fellow climbers after an intense session.</span>
+        </h2>
+        <div class="hero-buttons">
+          <a
+            href="https://maps.app.goo.gl/ExoLejDiePDpqMsx6"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hero-button hero-button-primary"
+          >
+            Open Google Maps
+          </a>
+          <a
+            href="https://www.instagram.com/boulderbox.saigon/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hero-button hero-button-secondary"
+          >
+            Our Instagram
+          </a>
+        </div>
+      </div>
+      <div class="hero-video">
+        <video
+          src="/assets/gym_video.mp4"
+          autoplay
+          preload="auto"
+          muted
+          playsinline
+        ></video>
+      </div>
     </div>
   </section>
 
   <!-- Pricing Section -->
   <section id="pricing" class="pricing-section">
     <div class="section-container">
-      <h2 class="section-title">Pricing</h2>
-      <p class="section-description pricing-description">
-        We believe climbing should be accessible. That's why we offer affordable pricing options designed to fit your budget.
-      </p>
-      <p class="section-description pricing-description">
-        Special Student Discount! We are proud to support the next generation of climbers! Vietnamese and international students (age 21 and below) are eligible for special discounts on our passes and memberships. Just bring your valid student ID!
-      </p>
+      <h1 class="pricing-title">Pricing</h1>
+      <div class="pricing-description-wrapper">
+        <h2 class="pricing-subtitle">
+          We believe climbing should be accessible. That's why we offer affordable pricing options designed to fit your budget.
+        </h2>
+        <h2 class="pricing-subtitle">
+          Special Student Discount! We are proud to support the next generation of climbers! Vietnamese and international students (age 21 and below) are eligible for special discounts on our passes and memberships. Just bring your valid student ID!
+        </h2>
+      </div>
 
       <!-- Pricing Carousel -->
       <div class="pricing-carousel">
@@ -75,10 +96,10 @@ import Layout from '../layouts/Layout.astro';
   <!-- About Section -->
   <section id="about" class="about-section">
     <div class="section-container">
-      <h2 class="section-title">About</h2>
-      <p class="section-description">
-        Meet the Boulder Box Crew - fellow climbers committed to ensuring you have the best experience possible.
-        <br /><br />
+      <h1 class="about-title">About</h1>
+      <p class="about-description">
+        Meet the Boulder Box Crew - fellow climbers committed to ensuring you have the best experience possible.<span class="about-description-secondary"><br /></span>
+        <br />
         From offering beta advice to cheering you on as you tackle new challenges, we're here to support you 
         every step of the way. At Boulder Box, our passion for bouldering extends beyond the walls – it's in 
         everything we do.
@@ -88,11 +109,13 @@ import Layout from '../layouts/Layout.astro';
       <div class="team-grid">
         <!-- Huyen Card -->
         <div class="team-card">
-          <img
-            src="/assets/huyen-profile-photo.avif"
-            alt="Huyen Alyvia"
-            class="team-card-image"
-          />
+          <div class="team-card-image-wrapper">
+            <img
+              src="/assets/huyen-profile-photo.avif"
+              alt="Huyen Alyvia"
+              class="team-card-image"
+            />
+          </div>
           <div class="team-card-content">
             <h3 class="team-name">Huyen Alyvia</h3>
             <p class="team-role">Founder</p>
@@ -105,11 +128,13 @@ import Layout from '../layouts/Layout.astro';
 
         <!-- Tu Card -->
         <div class="team-card">
-          <img
-            src="/assets/tu-profile-photo.avif"
-            alt="Thanh Tu"
-            class="team-card-image"
-          />
+          <div class="team-card-image-wrapper">
+            <img
+              src="/assets/tu-profile-photo.avif"
+              alt="Thanh Tu"
+              class="team-card-image"
+            />
+          </div>
           <div class="team-card-content">
             <h3 class="team-name">Thanh Tu</h3>
             <p class="team-role">Route-setter / Coach</p>
@@ -122,11 +147,13 @@ import Layout from '../layouts/Layout.astro';
 
         <!-- Ha Card -->
         <div class="team-card">
-          <img
-            src="/assets/ha-profile-photo.avif"
-            alt="Duyen Ha"
-            class="team-card-image"
-          />
+          <div class="team-card-image-wrapper">
+            <img
+              src="/assets/ha-profile-photo.avif"
+              alt="Duyen Ha"
+              class="team-card-image"
+            />
+          </div>
           <div class="team-card-content">
             <h3 class="team-name">Duyen Ha</h3>
             <p class="team-role">General Manager</p>
@@ -141,7 +168,7 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- Gallery Section -->
-  <section class="gallery-section">
+  <section id="gallery" class="gallery-section">
     <div class="section-container">
       <h2 class="section-title">Gallery</h2>
       <div class="gallery-grid">
@@ -191,12 +218,70 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
+  <!-- Blog Section -->
+  <section id="blog" class="blog-section">
+    <div class="section-container">
+      <h2 class="blog-title">Blog</h2>
+      <p class="blog-subtitle">Latest insights and stories from the Boulder Box community</p>
+      
+      <div class="blog-grid">
+        <!-- Blog Post 1 -->
+        <div class="blog-post">
+          <div class="blog-post-image">
+            <img src="/assets/gym-photo-01.avif" alt="Blog post" class="blog-image" />
+          </div>
+          <div class="blog-post-content">
+            <span class="blog-date">Jan 15, 2026</span>
+            <h3 class="blog-post-title">Getting Started with Bouldering</h3>
+            <p class="blog-post-excerpt">
+              Learn the basics of bouldering and discover why it's the perfect full-body workout for climbers of all levels.
+            </p>
+            <a href="#" class="blog-read-more">Read More →</a>
+          </div>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="blog-post">
+          <div class="blog-post-image">
+            <img src="/assets/gym-photo-02.avif" alt="Blog post" class="blog-image" />
+          </div>
+          <div class="blog-post-content">
+            <span class="blog-date">Jan 10, 2026</span>
+            <h3 class="blog-post-title">Training Tips from Our Coaches</h3>
+            <p class="blog-post-excerpt">
+              Discover training techniques and methodologies used by professional climbers to improve your skills.
+            </p>
+            <a href="#" class="blog-read-more">Read More →</a>
+          </div>
+        </div>
+
+        <!-- Blog Post 3 -->
+        <div class="blog-post">
+          <div class="blog-post-image">
+            <img src="/assets/gym-photo-03.avif" alt="Blog post" class="blog-image" />
+          </div>
+          <div class="blog-post-content">
+            <span class="blog-date">Jan 5, 2026</span>
+            <h3 class="blog-post-title">Community Highlight: This Month's Winners</h3>
+            <p class="blog-post-excerpt">
+              Celebrate with us as we highlight the amazing achievements and personal records set by our climbers.
+            </p>
+            <a href="#" class="blog-read-more">Read More →</a>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:32px;">
+        <a href="/blog" class="blog-list-read-more" style="font-size:1.1rem; font-weight:600; color:#fe5c13; text-decoration:none; padding:12px 32px; border-radius:8px; border:1px solid #fe5c13; display:inline-block; transition:background 0.2s;">View all blogs</a>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact Section -->
   <section id="contact" class="contact-section">
-    <div class="section-container">
-      <h2 class="section-title contact-title">Chat to us.</h2>
-      
-      <div class="contact-content">
+    <div class="section-container contact-container">
+      <div class="contact-form-wrapper">
+        <h2 class="contact-title">Chat to us.</h2>
+        
         <!-- Contact Form -->
         <form class="contact-form">
           <div class="form-row">
@@ -206,7 +291,7 @@ import Layout from '../layouts/Layout.astro';
                 type="text"
                 id="name"
                 name="name"
-                placeholder="Your name"
+                placeholder="Jane Smith"
                 class="form-input"
               />
             </div>
@@ -216,7 +301,7 @@ import Layout from '../layouts/Layout.astro';
                 type="email"
                 id="email"
                 name="email"
-                placeholder="your@email.com"
+                placeholder="youremail@email.com"
                 class="form-input"
               />
             </div>
@@ -240,34 +325,59 @@ import Layout from '../layouts/Layout.astro';
             Submit
           </button>
         </form>
+      </div>
 
-        <!-- Contact Info -->
-        <div class="contact-info">
-          <h3 class="contact-info-title">Find us</h3>
-          <div class="info-item">
-            <p class="info-label"><strong>Boulder Box Saigon</strong></p>
-            <p class="info-text">Dang Thuy Tram, District 1<br />Ho Chi Minh City, Vietnam</p>
+      <!-- Contact Info -->
+      <div class="contact-info-wrapper">
+        <h3 class="contact-info-title">Find us</h3>
+        
+        <div class="map-preview" aria-hidden="false">
+          <div class="map-preview-inner">
+            <div class="place-name">Boulder Box Saigon</div>
+            <div class="place-address">96/114, Đ. Đặng Thuỳ Trâm, Phường 13, Bình Thạnh, TP. HCM</div>
+            <div class="review-box">
+              <div aria-hidden="true" class="review-number">5.0</div>
+              <div aria-label="Rated 5.0 out of 5" role="img" class="rating-stars">
+                <span class="rating-star" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 .587l3.668 7.431L23.6 9.748l-5.7 5.556L19.335 24 12 19.897 4.665 24l1.435-8.696L.4 9.748l7.932-1.73L12 .587z"/></svg>
+                </span>
+                <span class="rating-star" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 .587l3.668 7.431L23.6 9.748l-5.7 5.556L19.335 24 12 19.897 4.665 24l1.435-8.696L.4 9.748l7.932-1.73L12 .587z"/></svg>
+                </span>
+                <span class="rating-star" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 .587l3.668 7.431L23.6 9.748l-5.7 5.556L19.335 24 12 19.897 4.665 24l1.435-8.696L.4 9.748l7.932-1.73L12 .587z"/></svg>
+                </span>
+                <span class="rating-star" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 .587l3.668 7.431L23.6 9.748l-5.7 5.556L19.335 24 12 19.897 4.665 24l1.435-8.696L.4 9.748l7.932-1.73L12 .587z"/></svg>
+                </span>
+                <span class="rating-star" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 .587l3.668 7.431L23.6 9.748l-5.7 5.556L19.335 24 12 19.897 4.665 24l1.435-8.696L.4 9.748l7.932-1.73L12 .587z"/></svg>
+                </span>
+              </div>
+              <a aria-label="91 reviews" target="_blank" href="https://search.google.com/local/reviews?placeid=ChIJQ2zrMVMldTER5b39KGBsbzA&amp;q=Boulder+Box+Saigon,+Dang+Thuy+Tram,+Vietnam&amp;hl=en&amp;gl=VN" class="review-box-link">91 reviews</a>
+            </div>
           </div>
-          <div class="info-item">
-            <p class="info-label"><strong>Phone:</strong></p>
-            <p class="info-text"><a href="tel:+84906916216">0906 916 216</a></p>
-          </div>
-          <div class="info-item">
-            <p class="info-label"><strong>Hours:</strong></p>
-            <p class="info-text">Mon - Sun: 8:00 AM - 9:00 PM</p>
-          </div>
-          <a
-            href="https://maps.app.goo.gl/ExoLejDiePDpqMsx6"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="cta-button"
-          >
-            Open in Maps
-          </a>
         </div>
+        
+        <div>
+          <p class="info-label"><strong>Hours:</strong></p>
+          <p class="info-text">Mon - Sun: 10:30 AM - 10:00 PM</p>
+        </div>
+        
+        <a
+          href="https://maps.app.goo.gl/ExoLejDiePDpqMsx6"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-cta-button"
+        >
+          Open in Maps
+        </a>
       </div>
     </div>
   </section>
+
+  <!-- Google Maps Section (iframe removed) -->
+  <!-- iframe removed per request; map-preview moved into Contact info -->
 
   <!-- Footer -->
   <footer class="footer">
@@ -295,8 +405,8 @@ import Layout from '../layouts/Layout.astro';
 
   /* Hero Section */
   .hero-section {
-    background-color: #1a1a1a;
-    color: #fff;
+    background-color: #fafafa;
+    color: #333;
     padding: 2.5rem 0;
     width: 100%;
   }

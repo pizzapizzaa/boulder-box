@@ -30,10 +30,11 @@
   <nav class="header-nav">
     <div class="header-container">
       <a href="/" class="header-link">Home</a>
-      <a href="/pricing" class="header-link">Pricing</a>
-      <a href="#about" class="header-link">About</a>
+      <a href="/#pricing" class="header-link">Pricing</a>
+      <a href="/#about" class="header-link">About</a>
+      <a href="/#gallery" class="header-link">Gallery</a>
       <a href="/blog" class="header-link">Blog</a>
-      <a href="#contact" class="header-link">Contact</a>
+      <a href="/#contact" class="header-link">Contact</a>
     </div>
   </nav>
 
@@ -50,10 +51,11 @@
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="header-mobile-menu">
     <a href="/" class="header-mobile-link">Home</a>
-    <a href="/pricing" class="header-mobile-link">Pricing</a>
-    <a href="#about" class="header-mobile-link">About</a>
+    <a href="/#pricing" class="header-mobile-link">Pricing</a>
+    <a href="/#about" class="header-mobile-link">About</a>
+    <a href="/#gallery" class="header-mobile-link">Gallery</a>
     <a href="/blog" class="header-mobile-link">Blog</a>
-    <a href="#contact" class="header-mobile-link">Contact</a>
+    <a href="/#contact" class="header-mobile-link">Contact</a>
     <a
       href="https://maps.app.goo.gl/ExoLejDiePDpqMsx6"
       target="_blank"
@@ -178,6 +180,10 @@
     color: rgb(255, 255, 255);
   }
 
+  .header-link.active {
+    color: #fe5c13;
+  }
+
   /* Mobile Menu Button */
   .header-mobile-btn {
     display: none;
@@ -226,6 +232,10 @@
 
   .header-mobile-link:hover {
     color: rgb(255, 255, 255);
+  }
+
+  .header-mobile-link.active {
+    color: #fe5c13;
   }
 
   .header-mobile-cta {
