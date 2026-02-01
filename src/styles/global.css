@@ -1,0 +1,61 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #ededed;
+  background-color: #050302;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+h1 { font-size: 50px; }
+h2 { font-size: 32px; }
+h3 { font-size: 20px; }
+
+p { line-height: 1.6; }
+
+a {
+  color: #09f;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* Section Spacing */
+section {
+  width: 100%;
+}
+
+/* Buttons */
+button, [role="button"] {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Forms */
+input, textarea, select {
+  font-family: inherit;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
