@@ -1,0 +1,14 @@
+.DS_Store
+.vscode/
+public/.DS_Store
+public/assets/.DS_Store
+
+# Node / build
+node_modules/
+dist/
+build/
+
+# Environment
+.env
+.env.local
+.env.*.local
