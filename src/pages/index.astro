@@ -207,13 +207,6 @@ import Layout from '../layouts/Layout.astro';
             class="gallery-image"
           />
         </a>
-        <a href="/assets/pricing-01.avif" target="_blank" rel="noopener" class="gallery-item">
-          <img
-            src="/assets/pricing-01.avif"
-            alt="Boulder Box Pricing"
-            class="gallery-image"
-          />
-        </a>
       </div>
     </div>
   </section>
@@ -228,45 +221,45 @@ import Layout from '../layouts/Layout.astro';
         <!-- Blog Post 1 -->
         <div class="blog-post">
           <div class="blog-post-image">
-            <img src="/assets/gym-photo-01.avif" alt="Blog post" class="blog-image" />
+            <img src="/assets/IG_thumbnail_tet_holiday.jpg" alt="V-Day & Tet" class="blog-image" />
           </div>
           <div class="blog-post-content">
-            <span class="blog-date">Jan 15, 2026</span>
-            <h3 class="blog-post-title">Getting Started with Bouldering</h3>
+            <span class="blog-date">Feb 2, 2026</span>
+            <h3 class="blog-post-title">Happy V-Day and Lunar New Year!</h3>
             <p class="blog-post-excerpt">
-              Learn the basics of bouldering and discover why it's the perfect full-body workout for climbers of all levels.
+              Updated Tet hours and Couple Climbing Minigame — join us for special dates and prizes!
             </p>
-            <a href="#" class="blog-read-more">Read More →</a>
+            <a href="/happy-vday-lunar-new-year-2026" class="blog-read-more">Read More →</a>
           </div>
         </div>
 
         <!-- Blog Post 2 -->
         <div class="blog-post">
           <div class="blog-post-image">
-            <img src="/assets/gym-photo-02.avif" alt="Blog post" class="blog-image" />
+            <img src="/assets/boulder-box-update-2026.avif" alt="Updates 2026" class="blog-image" />
           </div>
           <div class="blog-post-content">
-            <span class="blog-date">Jan 10, 2026</span>
-            <h3 class="blog-post-title">Training Tips from Our Coaches</h3>
+            <span class="blog-date">Dec 30, 2025</span>
+            <h3 class="blog-post-title">2026 AT BOULDER BOX: NEW UPDATES & PERKS! 🧗‍♂️✨</h3>
             <p class="blog-post-excerpt">
-              Discover training techniques and methodologies used by professional climbers to improve your skills.
+              New year, same great vibes — price freeze, updated gear policy, and new discounts for 2026.
             </p>
-            <a href="#" class="blog-read-more">Read More →</a>
+            <a href="/updates-2026" class="blog-read-more">Read More →</a>
           </div>
         </div>
 
         <!-- Blog Post 3 -->
         <div class="blog-post">
           <div class="blog-post-image">
-            <img src="/assets/gym-photo-03.avif" alt="Blog post" class="blog-image" />
+            <img src="/assets/boulder-box-rocktober-2025.avif" alt="Rocktober 2025" class="blog-image" />
           </div>
           <div class="blog-post-content">
-            <span class="blog-date">Jan 5, 2026</span>
-            <h3 class="blog-post-title">Community Highlight: This Month's Winners</h3>
+            <span class="blog-date">Nov 4, 2025</span>
+            <h3 class="blog-post-title">What an incredible finish to Rocktober 2025!</h3>
             <p class="blog-post-excerpt">
-              Celebrate with us as we highlight the amazing achievements and personal records set by our climbers.
+              A thrilling competition finish — congratulations to our climbers and thanks to sponsors and organisers!
             </p>
-            <a href="#" class="blog-read-more">Read More →</a>
+            <a href="/rocktober-2025" class="blog-read-more">Read More →</a>
           </div>
         </div>
       </div>
@@ -638,6 +631,22 @@ import Layout from '../layouts/Layout.astro';
     width: 100%;
   }
 
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact-form-wrapper,
+  .contact-info-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-info-wrapper {
+    padding-top: 40px;
+  }
+
   .contact-title {
     color: #001122;
     margin-bottom: 2rem;
@@ -848,6 +857,12 @@ import Layout from '../layouts/Layout.astro';
 
     .contact-section {
       padding: 3.5rem 0;
+    }
+
+    .contact-container {
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: start;
     }
 
     .contact-content {
